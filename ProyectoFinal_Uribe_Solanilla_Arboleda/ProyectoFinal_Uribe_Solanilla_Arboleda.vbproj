@@ -125,6 +125,7 @@
     <Compile Include="puntaje.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="QuizGame.vb" />
     <Compile Include="SeleccionQuices.Designer.vb">
       <DependentUpon>SeleccionQuices.vb</DependentUpon>
     </Compile>

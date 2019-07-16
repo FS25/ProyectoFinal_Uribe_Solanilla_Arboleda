@@ -3,41 +3,18 @@
     Private quices(-1) As Quices
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim mover As Integer
-        Dim conn As Odbc.OdbcConnection
-        conn = New Odbc.OdbcConnection("DSN=BBG")
-
-        conn.Open()
-        MsgBox(conn.State.ToString)
-
-        Dim command As New Odbc.OdbcCommand()
-        command.Connection = conn
-
-
-        command.CommandText = "select descripcion, id_quiz from pregunta where id_quiz = 3"
-
-        Dim datReader As Odbc.OdbcDataReader
-        datReader = command.ExecuteReader
-
-        While datReader.Read
-            Preguntas.ArrayPreguntas(mover) = datReader("descripcion")
-            mover = mover + 1
-        End While
-
-
-        conn.Close()
-
         Hide()
         Preguntas.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         'carga preguntas quiz dos
-        Hide()
         Preguntas.Show()
+        Preguntas.SetQuiz(New QuizGame(3))
+        Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         'carga preguntas quiz tres
         Hide()
         Preguntas.Show()
@@ -55,6 +32,8 @@
     End Sub
 
     Private Sub SeleccionQuices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        dgvQuices.Rows.Clear()
+
         Dim command = Database.getCommand()
         Dim dataReader As Odbc.OdbcDataReader
         Dim queryTxt = "SELECT DISTINCT qz.id, " +
@@ -78,15 +57,5 @@
             row.Cells("score").Value = dataReader("max_puntaje")
             row.Cells("action").Value = "Jugar"
         End While
-    End Sub
-End Class
-
-Class Quiz
-    Private name As String
-    Private id As Integer
-
-    Public Sub Quiz(ByVal id As Integer, ByVal name As String)
-        Me.id = id
-        Me.name = name
     End Sub
 End Class

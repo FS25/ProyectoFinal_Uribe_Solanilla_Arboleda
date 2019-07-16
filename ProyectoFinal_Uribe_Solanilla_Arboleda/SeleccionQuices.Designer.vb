@@ -24,8 +24,6 @@ Partial Class SeleccionQuices
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.dgvQuices = New System.Windows.Forms.DataGridView()
@@ -50,37 +48,13 @@ Partial Class SeleccionQuices
         '
         Me.Button1.BackColor = System.Drawing.Color.White
         Me.Button1.Font = New System.Drawing.Font("Arial Narrow", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(110, 121)
+        Me.Button1.Location = New System.Drawing.Point(153, 416)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(492, 51)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Quiz 1 -"
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.Font = New System.Drawing.Font("Arial Narrow", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(110, 186)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(492, 51)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Quiz 2 - "
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.Font = New System.Drawing.Font("Arial Narrow", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(110, 251)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(492, 51)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Quiz 3 -"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -98,7 +72,7 @@ Partial Class SeleccionQuices
         '
         Me.btnSalir.BackColor = System.Drawing.Color.White
         Me.btnSalir.Font = New System.Drawing.Font("Arial Narrow", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(246, 485)
+        Me.btnSalir.Location = New System.Drawing.Point(235, 316)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(182, 40)
         Me.btnSalir.TabIndex = 5
@@ -111,7 +85,7 @@ Partial Class SeleccionQuices
         Me.dgvQuices.AllowUserToDeleteRows = False
         Me.dgvQuices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvQuices.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.quiz, Me.userName, Me.score, Me.action})
-        Me.dgvQuices.Location = New System.Drawing.Point(32, 317)
+        Me.dgvQuices.Location = New System.Drawing.Point(32, 121)
         Me.dgvQuices.Name = "dgvQuices"
         Me.dgvQuices.ReadOnly = True
         Me.dgvQuices.RowTemplate.Height = 24
@@ -152,8 +126,6 @@ Partial Class SeleccionQuices
         Me.Controls.Add(Me.dgvQuices)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -172,8 +144,6 @@ Partial Class SeleccionQuices
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents dgvQuices As DataGridView
