@@ -22,20 +22,20 @@ Partial Class Puntaje
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblScore = New System.Windows.Forms.Label()
         Me.btnTerminar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label2
+        'lblScore
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(252, 122)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(184, 94)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "####"
+        Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Arial Narrow", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.Location = New System.Drawing.Point(252, 122)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(184, 94)
+        Me.lblScore.TabIndex = 1
+        Me.lblScore.Text = "####"
         '
         'btnTerminar
         '
@@ -68,7 +68,7 @@ Partial Class Puntaje
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTerminar)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblScore)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -81,7 +81,7 @@ Partial Class Puntaje
 
     End Sub
 
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblScore As Label
     Friend WithEvents btnTerminar As Button
     Friend WithEvents Label1 As Label
 End Class

@@ -24,7 +24,7 @@ Partial Class sugerencias
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnTerminar = New System.Windows.Forms.Button()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.txtTema = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -49,14 +49,14 @@ Partial Class sugerencias
         Me.btnTerminar.Text = "Terminar"
         Me.btnTerminar.UseVisualStyleBackColor = False
         '
-        'RichTextBox1
+        'txtTema
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(48, 105)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(622, 138)
-        Me.RichTextBox1.TabIndex = 7
-        Me.RichTextBox1.Text = ""
+        Me.txtTema.Location = New System.Drawing.Point(48, 105)
+        Me.txtTema.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtTema.Name = "txtTema"
+        Me.txtTema.Size = New System.Drawing.Size(622, 138)
+        Me.txtTema.TabIndex = 7
+        Me.txtTema.Text = ""
         '
         'sugerencias
         '
@@ -64,7 +64,7 @@ Partial Class sugerencias
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(711, 360)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.txtTema)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTerminar)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -77,5 +77,5 @@ Partial Class sugerencias
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btnTerminar As Button
-    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents txtTema As RichTextBox
 End Class

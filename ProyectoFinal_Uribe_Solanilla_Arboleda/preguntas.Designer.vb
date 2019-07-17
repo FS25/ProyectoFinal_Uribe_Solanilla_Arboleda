@@ -25,9 +25,9 @@ Partial Class Preguntas
         Me.components = New System.ComponentModel.Container()
         Me.lblQuest = New System.Windows.Forms.Label()
         Me.lblPreguntaNum = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.rdBtnOption1 = New System.Windows.Forms.RadioButton()
+        Me.rdBtnOption2 = New System.Windows.Forms.RadioButton()
+        Me.rdBtnOption3 = New System.Windows.Forms.RadioButton()
         Me.btnSiguiente = New System.Windows.Forms.Button()
         Me.BB_GamesDataSet = New ProyectoFinal_Uribe_Solanilla_Arboleda.BB_GamesDataSet()
         Me.PreguntaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -60,41 +60,41 @@ Partial Class Preguntas
         Me.lblPreguntaNum.TabIndex = 1
         Me.lblPreguntaNum.Text = "Pregunta #"
         '
-        'RadioButton1
+        'rdBtnOption1
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(93, 194)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton1.TabIndex = 2
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rdBtnOption1.AutoSize = True
+        Me.rdBtnOption1.Location = New System.Drawing.Point(93, 194)
+        Me.rdBtnOption1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.rdBtnOption1.Name = "rdBtnOption1"
+        Me.rdBtnOption1.Size = New System.Drawing.Size(113, 21)
+        Me.rdBtnOption1.TabIndex = 2
+        Me.rdBtnOption1.TabStop = True
+        Me.rdBtnOption1.Text = "rdBtnOption1"
+        Me.rdBtnOption1.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rdBtnOption2
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(93, 232)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton2.TabIndex = 3
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rdBtnOption2.AutoSize = True
+        Me.rdBtnOption2.Location = New System.Drawing.Point(93, 232)
+        Me.rdBtnOption2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.rdBtnOption2.Name = "rdBtnOption2"
+        Me.rdBtnOption2.Size = New System.Drawing.Size(115, 21)
+        Me.rdBtnOption2.TabIndex = 3
+        Me.rdBtnOption2.TabStop = True
+        Me.rdBtnOption2.Text = "RadioButton2"
+        Me.rdBtnOption2.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rdBtnOption3
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(93, 270)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton3.TabIndex = 4
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "RadioButton3"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rdBtnOption3.AutoSize = True
+        Me.rdBtnOption3.Location = New System.Drawing.Point(93, 270)
+        Me.rdBtnOption3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.rdBtnOption3.Name = "rdBtnOption3"
+        Me.rdBtnOption3.Size = New System.Drawing.Size(115, 21)
+        Me.rdBtnOption3.TabIndex = 4
+        Me.rdBtnOption3.TabStop = True
+        Me.rdBtnOption3.Text = "RadioButton3"
+        Me.rdBtnOption3.UseVisualStyleBackColor = True
         '
         'btnSiguiente
         '
@@ -151,9 +151,9 @@ Partial Class Preguntas
         Me.ClientSize = New System.Drawing.Size(721, 360)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnSiguiente)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.rdBtnOption3)
+        Me.Controls.Add(Me.rdBtnOption2)
+        Me.Controls.Add(Me.rdBtnOption1)
         Me.Controls.Add(Me.lblPreguntaNum)
         Me.Controls.Add(Me.lblQuest)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -173,9 +173,9 @@ Partial Class Preguntas
 
     Friend WithEvents lblQuest As Label
     Friend WithEvents lblPreguntaNum As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents rdBtnOption1 As RadioButton
+    Friend WithEvents rdBtnOption2 As RadioButton
+    Friend WithEvents rdBtnOption3 As RadioButton
     Friend WithEvents btnSiguiente As Button
     Friend WithEvents BB_GamesDataSet As BB_GamesDataSet
     Friend WithEvents PreguntaBindingSource As BindingSource

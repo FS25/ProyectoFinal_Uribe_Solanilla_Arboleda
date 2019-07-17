@@ -1,13 +1,10 @@
 ﻿Module Database
     Private conn As Odbc.OdbcConnection
-    Private cmd As Odbc.OdbcCommand
 
     Public Function createConnection() As Boolean
         Try
             conn = New Odbc.OdbcConnection("DSN=BBG")
             conn.Open()
-            cmd = New Odbc.OdbcCommand()
-            cmd.Connection = conn
             Return True
         Catch ex As Odbc.OdbcException
             Return False
@@ -17,6 +14,8 @@
     End Function
 
     Public Function getCommand() As Odbc.OdbcCommand
+        Dim cmd As Odbc.OdbcCommand = New Odbc.OdbcCommand()
+        cmd.Connection = conn
         Return cmd
     End Function
 
