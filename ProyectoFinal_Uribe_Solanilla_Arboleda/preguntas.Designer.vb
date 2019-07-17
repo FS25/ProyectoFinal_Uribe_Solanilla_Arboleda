@@ -43,7 +43,9 @@ Partial Class Preguntas
         'lblQuest
         '
         Me.lblQuest.AutoSize = True
-        Me.lblQuest.Location = New System.Drawing.Point(31, 114)
+        Me.lblQuest.BackColor = System.Drawing.Color.Transparent
+        Me.lblQuest.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblQuest.Location = New System.Drawing.Point(51, 138)
         Me.lblQuest.Name = "lblQuest"
         Me.lblQuest.Size = New System.Drawing.Size(670, 17)
         Me.lblQuest.TabIndex = 0
@@ -53,8 +55,10 @@ Partial Class Preguntas
         'lblPreguntaNum
         '
         Me.lblPreguntaNum.AutoSize = True
+        Me.lblPreguntaNum.BackColor = System.Drawing.Color.Transparent
         Me.lblPreguntaNum.Font = New System.Drawing.Font("Arial Narrow", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPreguntaNum.Location = New System.Drawing.Point(44, 43)
+        Me.lblPreguntaNum.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lblPreguntaNum.Location = New System.Drawing.Point(64, 67)
         Me.lblPreguntaNum.Name = "lblPreguntaNum"
         Me.lblPreguntaNum.Size = New System.Drawing.Size(155, 40)
         Me.lblPreguntaNum.TabIndex = 1
@@ -63,44 +67,50 @@ Partial Class Preguntas
         'rdBtnOption1
         '
         Me.rdBtnOption1.AutoSize = True
-        Me.rdBtnOption1.Location = New System.Drawing.Point(93, 194)
+        Me.rdBtnOption1.BackColor = System.Drawing.Color.Transparent
+        Me.rdBtnOption1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rdBtnOption1.Location = New System.Drawing.Point(113, 218)
         Me.rdBtnOption1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdBtnOption1.Name = "rdBtnOption1"
         Me.rdBtnOption1.Size = New System.Drawing.Size(113, 21)
         Me.rdBtnOption1.TabIndex = 2
         Me.rdBtnOption1.TabStop = True
         Me.rdBtnOption1.Text = "rdBtnOption1"
-        Me.rdBtnOption1.UseVisualStyleBackColor = True
+        Me.rdBtnOption1.UseVisualStyleBackColor = False
         '
         'rdBtnOption2
         '
         Me.rdBtnOption2.AutoSize = True
-        Me.rdBtnOption2.Location = New System.Drawing.Point(93, 232)
+        Me.rdBtnOption2.BackColor = System.Drawing.Color.Transparent
+        Me.rdBtnOption2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rdBtnOption2.Location = New System.Drawing.Point(113, 256)
         Me.rdBtnOption2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdBtnOption2.Name = "rdBtnOption2"
         Me.rdBtnOption2.Size = New System.Drawing.Size(115, 21)
         Me.rdBtnOption2.TabIndex = 3
         Me.rdBtnOption2.TabStop = True
         Me.rdBtnOption2.Text = "RadioButton2"
-        Me.rdBtnOption2.UseVisualStyleBackColor = True
+        Me.rdBtnOption2.UseVisualStyleBackColor = False
         '
         'rdBtnOption3
         '
         Me.rdBtnOption3.AutoSize = True
-        Me.rdBtnOption3.Location = New System.Drawing.Point(93, 270)
+        Me.rdBtnOption3.BackColor = System.Drawing.Color.Transparent
+        Me.rdBtnOption3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.rdBtnOption3.Location = New System.Drawing.Point(113, 294)
         Me.rdBtnOption3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.rdBtnOption3.Name = "rdBtnOption3"
         Me.rdBtnOption3.Size = New System.Drawing.Size(115, 21)
         Me.rdBtnOption3.TabIndex = 4
         Me.rdBtnOption3.TabStop = True
         Me.rdBtnOption3.Text = "RadioButton3"
-        Me.rdBtnOption3.UseVisualStyleBackColor = True
+        Me.rdBtnOption3.UseVisualStyleBackColor = False
         '
         'btnSiguiente
         '
         Me.btnSiguiente.BackColor = System.Drawing.Color.White
         Me.btnSiguiente.Font = New System.Drawing.Font("Arial Narrow", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSiguiente.Location = New System.Drawing.Point(515, 245)
+        Me.btnSiguiente.Location = New System.Drawing.Point(535, 269)
         Me.btnSiguiente.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnSiguiente.Name = "btnSiguiente"
         Me.btnSiguiente.Size = New System.Drawing.Size(120, 44)
@@ -148,7 +158,9 @@ Partial Class Preguntas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(721, 360)
+        Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(793, 403)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.rdBtnOption3)
@@ -156,6 +168,7 @@ Partial Class Preguntas
         Me.Controls.Add(Me.rdBtnOption1)
         Me.Controls.Add(Me.lblPreguntaNum)
         Me.Controls.Add(Me.lblQuest)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
