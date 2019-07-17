@@ -26,8 +26,9 @@ Partial Class Quices
         Me.txtNombreUsuario = New System.Windows.Forms.TextBox()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtNombreUsuario
@@ -35,7 +36,7 @@ Partial Class Quices
         Me.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNombreUsuario.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombreUsuario.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtNombreUsuario.Location = New System.Drawing.Point(122, 182)
+        Me.txtNombreUsuario.Location = New System.Drawing.Point(122, 310)
         Me.txtNombreUsuario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtNombreUsuario.Name = "txtNombreUsuario"
         Me.txtNombreUsuario.Size = New System.Drawing.Size(249, 46)
@@ -47,7 +48,7 @@ Partial Class Quices
         Me.btnIngresar.BackColor = System.Drawing.Color.White
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnIngresar.Location = New System.Drawing.Point(162, 359)
+        Me.btnIngresar.Location = New System.Drawing.Point(162, 459)
         Me.btnIngresar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(160, 59)
@@ -60,23 +61,23 @@ Partial Class Quices
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPassword.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.SystemColors.InactiveCaption
-        Me.txtPassword.Location = New System.Drawing.Point(122, 270)
+        Me.txtPassword.Location = New System.Drawing.Point(122, 380)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(249, 46)
         Me.txtPassword.TabIndex = 7
         Me.txtPassword.Text = "Contraseña"
         '
-        'Label1
+        'PictureBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Vladimir Script", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(114, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(268, 48)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "BuzzFeed Quices"
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(122, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(249, 249)
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
         '
         'Quices
         '
@@ -86,10 +87,10 @@ Partial Class Quices
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(499, 491)
+        Me.ClientSize = New System.Drawing.Size(499, 557)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.txtNombreUsuario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -101,7 +102,9 @@ Partial Class Quices
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Quices"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -110,6 +113,6 @@ Partial Class Quices
     Friend WithEvents txtNombreUsuario As TextBox
     Friend WithEvents btnIngresar As Button
     Friend WithEvents txtPassword As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

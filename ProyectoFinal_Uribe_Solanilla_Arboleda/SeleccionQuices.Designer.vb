@@ -176,6 +176,7 @@ Partial Class SeleccionQuices
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SeleccionQuices"
         CType(Me.dgvQuices, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

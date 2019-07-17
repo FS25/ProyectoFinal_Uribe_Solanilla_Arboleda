@@ -82,6 +82,7 @@ Partial Class Puntaje
         Me.Name = "Puntaje"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Puntaje"
         Me.ResumeLayout(False)
         Me.PerformLayout()

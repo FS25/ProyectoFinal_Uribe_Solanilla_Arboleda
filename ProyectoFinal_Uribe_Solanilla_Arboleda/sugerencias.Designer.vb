@@ -74,6 +74,7 @@ Partial Class sugerencias
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "sugerencias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "sugerencias"
         Me.ResumeLayout(False)
         Me.PerformLayout()

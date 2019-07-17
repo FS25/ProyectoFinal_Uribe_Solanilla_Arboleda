@@ -179,6 +179,7 @@ Partial Class Preguntas
         Me.Name = "Preguntas"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Preguntas"
         CType(Me.BB_GamesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PreguntaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
