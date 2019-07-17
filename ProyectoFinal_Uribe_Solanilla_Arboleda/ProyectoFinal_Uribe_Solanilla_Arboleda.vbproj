@@ -79,12 +79,6 @@
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Database.vb" />
-    <Compile Include="dgvcontainer.Designer.vb">
-      <DependentUpon>dgvcontainer.vb</DependentUpon>
-    </Compile>
-    <Compile Include="dgvcontainer.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -140,9 +134,6 @@
     <Compile Include="UserSession.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="dgvcontainer.resx">
-      <DependentUpon>dgvcontainer.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

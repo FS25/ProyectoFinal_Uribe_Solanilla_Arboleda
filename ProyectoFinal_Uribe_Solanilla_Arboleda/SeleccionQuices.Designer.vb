@@ -42,7 +42,7 @@ Partial Class SeleccionQuices
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(64, 35)
+        Me.Label1.Location = New System.Drawing.Point(76, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(141, 45)
         Me.Label1.TabIndex = 0
@@ -88,19 +88,19 @@ Partial Class SeleccionQuices
         '
         Me.Button4.BackColor = System.Drawing.Color.White
         Me.Button4.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(545, 31)
+        Me.Button4.Location = New System.Drawing.Point(588, 31)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(144, 64)
+        Me.Button4.Size = New System.Drawing.Size(144, 59)
         Me.Button4.TabIndex = 4
-        Me.Button4.Text = "High Score"
+        Me.Button4.Text = "Mejores Puntajes"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.Color.White
         Me.btnSalir.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSalir.Location = New System.Drawing.Point(258, 382)
+        Me.btnSalir.Location = New System.Drawing.Point(310, 382)
         Me.btnSalir.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(205, 50)
@@ -118,13 +118,13 @@ Partial Class SeleccionQuices
         Me.dgvQuices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgvQuices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvQuices.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.quiz, Me.userName, Me.score, Me.action})
-        Me.dgvQuices.Location = New System.Drawing.Point(105, 160)
+        Me.dgvQuices.Location = New System.Drawing.Point(84, 160)
         Me.dgvQuices.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.dgvQuices.Name = "dgvQuices"
         Me.dgvQuices.ReadOnly = True
         Me.dgvQuices.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.dgvQuices.RowTemplate.Height = 24
-        Me.dgvQuices.Size = New System.Drawing.Size(554, 188)
+        Me.dgvQuices.Size = New System.Drawing.Size(648, 188)
         Me.dgvQuices.StandardTab = True
         Me.dgvQuices.TabIndex = 6
         '
@@ -159,7 +159,7 @@ Partial Class SeleccionQuices
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(762, 782)
+        Me.ClientSize = New System.Drawing.Size(811, 700)
         Me.ControlBox = False
         Me.Controls.Add(Me.dgvQuices)
         Me.Controls.Add(Me.btnSalir)

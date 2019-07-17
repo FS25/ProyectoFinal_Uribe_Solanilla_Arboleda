@@ -37,11 +37,11 @@ Partial Class HighestScore
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(314, 69)
+        Me.Label1.Location = New System.Drawing.Point(221, 59)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(319, 50)
+        Me.Label1.Size = New System.Drawing.Size(394, 50)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Highest Scores"
+        Me.Label1.Text = "Mejores Jugadores"
         '
         'DataGridView1
         '
@@ -55,11 +55,11 @@ Partial Class HighestScore
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.puntos, Me.Tema})
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.Location = New System.Drawing.Point(75, 161)
+        Me.DataGridView1.Location = New System.Drawing.Point(79, 136)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(813, 215)
+        Me.DataGridView1.Size = New System.Drawing.Size(647, 215)
         Me.DataGridView1.TabIndex = 5
         '
         'Nombre
@@ -81,7 +81,7 @@ Partial Class HighestScore
         '
         Me.btnTerminar.BackColor = System.Drawing.Color.White
         Me.btnTerminar.Font = New System.Drawing.Font("Arial", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTerminar.Location = New System.Drawing.Point(340, 410)
+        Me.btnTerminar.Location = New System.Drawing.Point(273, 366)
         Me.btnTerminar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnTerminar.Name = "btnTerminar"
         Me.btnTerminar.Size = New System.Drawing.Size(252, 59)
@@ -96,7 +96,7 @@ Partial Class HighestScore
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(962, 560)
+        Me.ClientSize = New System.Drawing.Size(811, 450)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnTerminar)
         Me.Controls.Add(Me.DataGridView1)
