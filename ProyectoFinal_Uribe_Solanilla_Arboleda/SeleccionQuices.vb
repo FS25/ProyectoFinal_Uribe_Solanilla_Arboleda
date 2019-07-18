@@ -58,4 +58,9 @@
         End If
     End Sub
 
+    Private Sub DgvQuices_Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Database.closeConnection()
+        Application.Exit()
+    End Sub
+
 End Class

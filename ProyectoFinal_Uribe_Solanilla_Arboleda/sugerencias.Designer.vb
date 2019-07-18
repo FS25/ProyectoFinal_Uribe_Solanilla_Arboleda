@@ -71,8 +71,9 @@ Partial Class sugerencias
         Me.Controls.Add(Me.txtTema)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTerminar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "sugerencias"
         Me.Text = "sugerencias"
         Me.ResumeLayout(False)

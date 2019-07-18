@@ -161,14 +161,12 @@ Partial Class Preguntas
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
-        Me.ControlBox = False
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.rdBtnOption3)
         Me.Controls.Add(Me.rdBtnOption2)
         Me.Controls.Add(Me.rdBtnOption1)
         Me.Controls.Add(Me.lblPreguntaNum)
         Me.Controls.Add(Me.lblQuest)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

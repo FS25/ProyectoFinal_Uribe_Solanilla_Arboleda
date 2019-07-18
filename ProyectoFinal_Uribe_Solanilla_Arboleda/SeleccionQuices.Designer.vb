@@ -119,12 +119,10 @@ Partial Class SeleccionQuices
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
-        Me.ControlBox = False
         Me.Controls.Add(Me.dgvQuices)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

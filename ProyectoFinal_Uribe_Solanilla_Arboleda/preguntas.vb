@@ -97,6 +97,7 @@
         End If
     End Sub
 
+
     Private Sub BtnSiguiente_Click(sender As Object, e As EventArgs) Handles btnSiguiente.Click
         Dim actualQuestion = questions(questionIndex)
 

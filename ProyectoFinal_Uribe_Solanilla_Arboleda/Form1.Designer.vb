@@ -26,6 +26,7 @@ Partial Class Quices
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,6 +62,7 @@ Partial Class Quices
         Me.txtPassword.Location = New System.Drawing.Point(229, 238)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(356, 27)
         Me.txtPassword.TabIndex = 7
         Me.txtPassword.Text = "Contraseña"
@@ -76,6 +78,19 @@ Partial Class Quices
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.ForeColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Image = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel1.Location = New System.Drawing.Point(591, 194)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(196, 17)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Olvide Mi Contraseña/Usuario"
+        '
         'Quices
         '
         Me.AllowDrop = True
@@ -85,6 +100,7 @@ Partial Class Quices
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.btnIngresar)
@@ -107,4 +123,5 @@ Partial Class Quices
     Friend WithEvents btnIngresar As Button
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

@@ -39,4 +39,8 @@
     Private Sub Quices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Database.createConnection()
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        MsgBox("hemos enviado su contraseña a su correo")
+    End Sub
 End Class
