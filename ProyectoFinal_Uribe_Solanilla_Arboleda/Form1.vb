@@ -1,4 +1,18 @@
-﻿Public Class Quices
+﻿'Curso: Herramientas de Programación Aplicada 3'
+'Grupo: 1IL132'
+'Fecha: 18 de Julio de 2019'
+
+'Estudiantes:'
+'Luis Arboleda 8-932-2422'
+'Fabio Solanilla 8-954-2298'
+'Daniel Uribe 20-14-3774
+
+'Version de Visual Basic: .NET Framework 4.5'
+'Proyecto Final'
+'Descripción: Programa de quices interactivos para empresa de Juegos'
+
+
+Public Class Quices
 
     Private conn As Odbc.OdbcConnection
 
@@ -37,7 +51,10 @@
     End Sub
 
     Private Sub Quices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Database.createConnection()
+        If Not Database.createConnection() Then
+            MsgBox("Ha ocurrido un error conectandose a la base de datos. Por favor, contacte al soporte técnico al 209-8888.")
+            Application.Exit()
+        End If
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked

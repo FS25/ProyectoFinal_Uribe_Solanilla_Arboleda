@@ -14,6 +14,7 @@
         End Try
 
         Hide()
+        SeleccionQuices.LoadQuices()
         SeleccionQuices.Show()
     End Sub
 End Class

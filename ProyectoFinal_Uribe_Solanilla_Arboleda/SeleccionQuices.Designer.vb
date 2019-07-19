@@ -23,9 +23,10 @@ Partial Class SeleccionQuices
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnHighScore = New System.Windows.Forms.Button()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.dgvQuices = New System.Windows.Forms.DataGridView()
+        Me.qId = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.quiz = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.userName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -41,22 +42,22 @@ Partial Class SeleccionQuices
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(69, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(112, 40)
+        Me.Label1.Size = New System.Drawing.Size(108, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Quices"
         '
-        'Button4
+        'btnHighScore
         '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button4.Location = New System.Drawing.Point(603, 39)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(128, 51)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Mejores Puntajes"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnHighScore.BackColor = System.Drawing.Color.White
+        Me.btnHighScore.Font = New System.Drawing.Font("Arial", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHighScore.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnHighScore.Location = New System.Drawing.Point(603, 39)
+        Me.btnHighScore.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnHighScore.Name = "btnHighScore"
+        Me.btnHighScore.Size = New System.Drawing.Size(128, 51)
+        Me.btnHighScore.TabIndex = 4
+        Me.btnHighScore.Text = "Mejores Puntajes"
+        Me.btnHighScore.UseVisualStyleBackColor = False
         '
         'btnSalir
         '
@@ -78,7 +79,7 @@ Partial Class SeleccionQuices
         Me.dgvQuices.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvQuices.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.dgvQuices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvQuices.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.quiz, Me.userName, Me.score, Me.action})
+        Me.dgvQuices.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.qId, Me.quiz, Me.userName, Me.score, Me.action})
         Me.dgvQuices.Cursor = System.Windows.Forms.Cursors.SizeWE
         Me.dgvQuices.Location = New System.Drawing.Point(76, 123)
         Me.dgvQuices.Name = "dgvQuices"
@@ -86,6 +87,12 @@ Partial Class SeleccionQuices
         Me.dgvQuices.RowTemplate.Height = 24
         Me.dgvQuices.Size = New System.Drawing.Size(655, 150)
         Me.dgvQuices.TabIndex = 6
+        '
+        'qId
+        '
+        Me.qId.HeaderText = "ID"
+        Me.qId.Name = "qId"
+        Me.qId.ReadOnly = True
         '
         'quiz
         '
@@ -121,7 +128,7 @@ Partial Class SeleccionQuices
         Me.ClientSize = New System.Drawing.Size(793, 403)
         Me.Controls.Add(Me.dgvQuices)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnHighScore)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
@@ -139,9 +146,10 @@ Partial Class SeleccionQuices
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnHighScore As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents dgvQuices As DataGridView
+    Friend WithEvents qId As DataGridViewTextBoxColumn
     Friend WithEvents quiz As DataGridViewTextBoxColumn
     Friend WithEvents userName As DataGridViewTextBoxColumn
     Friend WithEvents score As DataGridViewTextBoxColumn

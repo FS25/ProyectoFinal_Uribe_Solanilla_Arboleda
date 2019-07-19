@@ -150,4 +150,9 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub BtnAtras_Click(sender As Object, e As EventArgs)
+        questionIndex = questionIndex - 1
+        SetQuestion(questions(questionIndex))
+    End Sub
 End Class

@@ -23,12 +23,12 @@ Partial Class HighestScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgvScores = New System.Windows.Forms.DataGridView()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.puntos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tema = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnTerminar = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvScores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -43,23 +43,23 @@ Partial Class HighestScore
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Highest Scores"
         '
-        'DataGridView1
+        'dgvScores
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AllowUserToOrderColumns = True
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.puntos, Me.Tema})
-        Me.DataGridView1.Location = New System.Drawing.Point(82, 139)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(641, 172)
-        Me.DataGridView1.TabIndex = 5
+        Me.dgvScores.AllowUserToAddRows = False
+        Me.dgvScores.AllowUserToDeleteRows = False
+        Me.dgvScores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvScores.BackgroundColor = System.Drawing.Color.White
+        Me.dgvScores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvScores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dgvScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvScores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre, Me.puntos, Me.Tema})
+        Me.dgvScores.Location = New System.Drawing.Point(82, 139)
+        Me.dgvScores.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgvScores.Name = "dgvScores"
+        Me.dgvScores.ReadOnly = True
+        Me.dgvScores.RowTemplate.Height = 28
+        Me.dgvScores.Size = New System.Drawing.Size(641, 172)
+        Me.dgvScores.TabIndex = 5
         '
         'Nombre
         '
@@ -97,7 +97,7 @@ Partial Class HighestScore
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(811, 450)
         Me.Controls.Add(Me.btnTerminar)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvScores)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.Black
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -107,14 +107,14 @@ Partial Class HighestScore
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.Text = "HighestScore"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvScores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvScores As DataGridView
     Friend WithEvents Nombre As DataGridViewTextBoxColumn
     Friend WithEvents puntos As DataGridViewTextBoxColumn
     Friend WithEvents Tema As DataGridViewTextBoxColumn
