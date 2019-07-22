@@ -11,6 +11,8 @@
 
     Private Sub DgvQuices_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvQuices.CellClick
         'Jugar quiz al presionar el boton de Jugar'
+        MsgBox("Recuerde que como dificultad añadida no puede regresar a preguntas una vez respondio, Mucha suerte")
+
         If e.ColumnIndex = 4 Then
             Hide()
             Preguntas.SetQuiz(New QuizGame(Integer.Parse(dgvQuices.Rows(e.RowIndex).Cells("qId").Value)))
