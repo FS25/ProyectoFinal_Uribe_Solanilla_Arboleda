@@ -27,7 +27,9 @@ Partial Class Quices
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.pboView = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pboView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtNombreUsuario
@@ -91,6 +93,17 @@ Partial Class Quices
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Olvide Mi Contraseña/Usuario"
         '
+        'pboView
+        '
+        Me.pboView.BackColor = System.Drawing.Color.Transparent
+        Me.pboView.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.eye_icon_png_viewed_accomms_10
+        Me.pboView.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pboView.Location = New System.Drawing.Point(606, 238)
+        Me.pboView.Name = "pboView"
+        Me.pboView.Size = New System.Drawing.Size(30, 27)
+        Me.pboView.TabIndex = 10
+        Me.pboView.TabStop = False
+        '
         'Quices
         '
         Me.AllowDrop = True
@@ -100,6 +113,7 @@ Partial Class Quices
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
+        Me.Controls.Add(Me.pboView)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPassword)
@@ -114,6 +128,7 @@ Partial Class Quices
         Me.ShowInTaskbar = False
         Me.Text = "Quices"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pboView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -124,4 +139,5 @@ Partial Class Quices
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents pboView As PictureBox
 End Class

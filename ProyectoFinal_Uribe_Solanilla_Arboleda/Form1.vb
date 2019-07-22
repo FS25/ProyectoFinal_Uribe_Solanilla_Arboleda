@@ -65,4 +65,12 @@ Public Class Quices
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         MsgBox("hemos enviado su contraseña a su correo")
     End Sub
+
+    Private Sub PboView_Click(sender As Object, e As EventArgs) Handles pboView.Click
+        If txtPassword.PasswordChar = "*" Then
+            txtPassword.PasswordChar = ""
+        Else txtPassword.PasswordChar = ""
+            txtPassword.PasswordChar = "*"
+        End If
+    End Sub
 End Class
