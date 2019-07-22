@@ -69,7 +69,7 @@ Public Class Quices
     Private Sub PboView_Click(sender As Object, e As EventArgs) Handles pboView.Click
         If txtPassword.PasswordChar = "*" Then
             txtPassword.PasswordChar = ""
-        Else txtPassword.PasswordChar = ""
+        ElseIf txtPassword.PasswordChar = "" Then
             txtPassword.PasswordChar = "*"
         End If
     End Sub
