@@ -151,10 +151,7 @@
         End If
     End Sub
 
-    Private Sub Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
-        Database.closeConnection()
-        Application.Exit()
-    End Sub
+
 
 
 End Class
