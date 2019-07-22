@@ -57,6 +57,11 @@ Public Class Quices
         End If
     End Sub
 
+    Private Sub Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Database.closeConnection()
+        Application.Exit()
+    End Sub
+
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         MsgBox("hemos enviado su contraseña a su correo")
     End Sub

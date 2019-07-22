@@ -4,6 +4,11 @@
         SeleccionQuices.Show()
     End Sub
 
+    Private Sub Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Database.closeConnection()
+        Application.Exit()
+    End Sub
+
     Private Sub HighestScore_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'Cargamos los puntajes mas altos'

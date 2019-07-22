@@ -31,7 +31,9 @@ Partial Class SeleccionQuices
         Me.userName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.score = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.action = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.dgvQuices, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,7 +42,7 @@ Partial Class SeleccionQuices
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(69, 38)
+        Me.Label1.Location = New System.Drawing.Point(121, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(108, 40)
         Me.Label1.TabIndex = 0
@@ -118,6 +120,17 @@ Partial Class SeleccionQuices
         Me.action.Name = "action"
         Me.action.ReadOnly = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 15)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(74, 75)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'SeleccionQuices
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -126,6 +139,7 @@ Partial Class SeleccionQuices
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.dgvQuices)
         Me.Controls.Add(Me.btnSalir)
         Me.Controls.Add(Me.btnHighScore)
@@ -140,6 +154,7 @@ Partial Class SeleccionQuices
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SeleccionQuices"
         CType(Me.dgvQuices, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,4 +169,5 @@ Partial Class SeleccionQuices
     Friend WithEvents userName As DataGridViewTextBoxColumn
     Friend WithEvents score As DataGridViewTextBoxColumn
     Friend WithEvents action As DataGridViewButtonColumn
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

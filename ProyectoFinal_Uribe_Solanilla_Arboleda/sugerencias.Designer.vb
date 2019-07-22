@@ -25,6 +25,8 @@ Partial Class sugerencias
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnTerminar = New System.Windows.Forms.Button()
         Me.txtTema = New System.Windows.Forms.RichTextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -60,6 +62,17 @@ Partial Class sugerencias
         Me.txtTema.TabIndex = 7
         Me.txtTema.Text = ""
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 64)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'sugerencias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -68,6 +81,7 @@ Partial Class sugerencias
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(711, 360)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtTema)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTerminar)
@@ -76,6 +90,7 @@ Partial Class sugerencias
         Me.MinimizeBox = False
         Me.Name = "sugerencias"
         Me.Text = "sugerencias"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -84,4 +99,5 @@ Partial Class sugerencias
     Friend WithEvents Label1 As Label
     Friend WithEvents btnTerminar As Button
     Friend WithEvents txtTema As RichTextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

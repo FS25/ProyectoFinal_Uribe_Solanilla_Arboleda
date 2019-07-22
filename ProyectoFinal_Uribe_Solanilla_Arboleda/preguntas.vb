@@ -151,8 +151,10 @@
         End If
     End Sub
 
-    Private Sub BtnAtras_Click(sender As Object, e As EventArgs)
-        questionIndex = questionIndex - 1
-        SetQuestion(questions(questionIndex))
+    Private Sub Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Database.closeConnection()
+        Application.Exit()
     End Sub
+
+
 End Class

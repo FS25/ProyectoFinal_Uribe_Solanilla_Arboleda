@@ -35,9 +35,11 @@ Partial Class Preguntas
         Me.TableAdapterManager = New ProyectoFinal_Uribe_Solanilla_Arboleda.BB_GamesDataSetTableAdapters.TableAdapterManager()
         Me.RespuestaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.RespuestaTableAdapter = New ProyectoFinal_Uribe_Solanilla_Arboleda.BB_GamesDataSetTableAdapters.respuestaTableAdapter()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BB_GamesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PreguntaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RespuestaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblQuest
@@ -58,7 +60,7 @@ Partial Class Preguntas
         Me.lblPreguntaNum.BackColor = System.Drawing.Color.Transparent
         Me.lblPreguntaNum.Font = New System.Drawing.Font("Arial Narrow", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPreguntaNum.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lblPreguntaNum.Location = New System.Drawing.Point(64, 67)
+        Me.lblPreguntaNum.Location = New System.Drawing.Point(151, 67)
         Me.lblPreguntaNum.Name = "lblPreguntaNum"
         Me.lblPreguntaNum.Size = New System.Drawing.Size(155, 40)
         Me.lblPreguntaNum.TabIndex = 1
@@ -153,6 +155,17 @@ Partial Class Preguntas
         '
         Me.RespuestaTableAdapter.ClearBeforeFill = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 23)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(77, 74)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'Preguntas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -161,6 +174,7 @@ Partial Class Preguntas
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(793, 403)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnSiguiente)
         Me.Controls.Add(Me.rdBtnOption3)
         Me.Controls.Add(Me.rdBtnOption2)
@@ -177,6 +191,7 @@ Partial Class Preguntas
         CType(Me.BB_GamesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PreguntaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RespuestaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,4 +209,5 @@ Partial Class Preguntas
     Friend WithEvents TableAdapterManager As BB_GamesDataSetTableAdapters.TableAdapterManager
     Friend WithEvents RespuestaBindingSource As BindingSource
     Friend WithEvents RespuestaTableAdapter As BB_GamesDataSetTableAdapters.respuestaTableAdapter
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

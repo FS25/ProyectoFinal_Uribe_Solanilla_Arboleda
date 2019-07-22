@@ -28,7 +28,9 @@ Partial Class HighestScore
         Me.puntos = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tema = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnTerminar = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.dgvScores, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -37,11 +39,11 @@ Partial Class HighestScore
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Arial Narrow", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(278, 62)
+        Me.Label1.Location = New System.Drawing.Point(212, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(258, 46)
+        Me.Label1.Size = New System.Drawing.Size(397, 46)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Highest Scores"
+        Me.Label1.Text = "Puntuaciones más Altas"
         '
         'dgvScores
         '
@@ -65,16 +67,19 @@ Partial Class HighestScore
         '
         Me.Nombre.HeaderText = "Nombre de Usuario"
         Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
         '
         'puntos
         '
         Me.puntos.HeaderText = "Puntaje"
         Me.puntos.Name = "puntos"
+        Me.puntos.ReadOnly = True
         '
         'Tema
         '
         Me.Tema.HeaderText = "Tema"
         Me.Tema.Name = "Tema"
+        Me.Tema.ReadOnly = True
         '
         'btnTerminar
         '
@@ -88,6 +93,17 @@ Partial Class HighestScore
         Me.btnTerminar.Text = "Terminar"
         Me.btnTerminar.UseVisualStyleBackColor = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Logo
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 65)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
         'HighestScore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -96,6 +112,7 @@ Partial Class HighestScore
         Me.BackgroundImage = Global.ProyectoFinal_Uribe_Solanilla_Arboleda.My.Resources.Resources.Background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(811, 450)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnTerminar)
         Me.Controls.Add(Me.dgvScores)
         Me.Controls.Add(Me.Label1)
@@ -108,6 +125,7 @@ Partial Class HighestScore
         Me.ShowInTaskbar = False
         Me.Text = "HighestScore"
         CType(Me.dgvScores, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +137,5 @@ Partial Class HighestScore
     Friend WithEvents puntos As DataGridViewTextBoxColumn
     Friend WithEvents Tema As DataGridViewTextBoxColumn
     Friend WithEvents btnTerminar As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

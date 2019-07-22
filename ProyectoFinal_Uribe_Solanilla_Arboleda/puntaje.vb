@@ -5,6 +5,11 @@
         sugerencias.Show()
     End Sub
 
+    Private Sub Closing(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        Database.closeConnection()
+        Application.Exit()
+    End Sub
+
     Public Sub SetScore(ByVal score As Integer)
         lblScore.Text = score.ToString()
     End Sub
